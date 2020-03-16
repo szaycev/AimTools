@@ -1,3 +1,3 @@
 # AimTools
 
-A description of this package.
+Nice tools and useful extensions.
