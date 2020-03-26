@@ -7,6 +7,7 @@
 
 import Foundation
 
+#if canImport(UIKit)
 
 public extension UIViewController {
     public static func instantiate<T: UIViewController>(from name: StoryboardName) -> T {
@@ -17,6 +18,11 @@ public extension UIViewController {
 }
 
 
+
 // Make extension of this enum and add names of storyboards as cases.
 // extension StoryboardName { case: main = "Main" }
-public enum StoryboardName: String {}
+public enum StoryboardName: String {
+    case main = "Main"
+}
+
+#endif

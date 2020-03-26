@@ -10,7 +10,7 @@ import Foundation
 
 public extension String {
     
-    public static let empty = String()
+    static let empty = String()
     
-    public var isEmptyString: Bool { self.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty }
+    var isEmptyString: Bool { self.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty }
 }
