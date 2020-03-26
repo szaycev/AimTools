@@ -5,9 +5,9 @@
 //  Created by Sergey Zaycev on 26.03.2020.
 //
 
-import Foundation
-
 #if canImport(UIKit)
+
+import UIKit
 
 public extension UIViewController {
     public static func instantiate<T: UIViewController>(from name: StoryboardName) -> T {
