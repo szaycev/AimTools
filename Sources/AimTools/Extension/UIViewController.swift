@@ -8,8 +8,8 @@
 import Foundation
 
 
-extension UIViewController {
-    static func instantiate<T: UIViewController>(from name: StoryboardName) -> T {
+public extension UIViewController {
+    public static func instantiate<T: UIViewController>(from name: StoryboardName) -> T {
         let storyboard = UIStoryboard(name: name.rawValue, bundle: .main)
         let controllerIdentifire = String(describing: self)
         return storyboard.instantiateViewController(identifier: controllerIdentifire)
@@ -19,4 +19,4 @@ extension UIViewController {
 
 // Make extension of this enum and add names of storyboards as cases.
 // extension StoryboardName { case: main = "Main" }
-enum StoryboardName: String {}
+public enum StoryboardName: String {}
